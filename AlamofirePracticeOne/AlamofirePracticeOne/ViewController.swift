@@ -35,6 +35,7 @@ class ViewController: UIViewController {
         AF.request("https://api.themoviedb.org/3/discover/movie?api_key=d8fd16e131618860a80cb75f720d694c").response { response in
             do {
                 let decoded = try JSONDecoder().decode(DiscoverMoviesWrapper.self, from: response.data!)
+                //same as above, just using response instead
                 print(decoded)
             } catch {
                 print(error)
