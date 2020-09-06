@@ -11,10 +11,13 @@ import Alamofire
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var photo: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 //        alamofireJsonRequest()
-        alamofireRequest()
+//        alamofireRequest()
+        alamofireSimpleImageRequest()
     }
 
     func alamofireJsonRequest() {
@@ -40,6 +43,13 @@ class ViewController: UIViewController {
             } catch {
                 print(error)
             }
+        }
+    }
+    
+    func alamofireSimpleImageRequest() {
+        AF.request("https://image.tmdb.org/t/p/w500/uOw5JD8IlD546feZ6oxbIjvN66P.jpg").responseData { imageData in
+            let image = UIImage(data: imageData.data!)
+            self.photo.image = image!
         }
     }
 }
