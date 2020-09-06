@@ -13,10 +13,10 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        alamofireRequest()
+        alamofireJsonRequest()
     }
 
-    func alamofireRequest() {
+    func alamofireJsonRequest() {
         AF.request("https://api.themoviedb.org/3/discover/movie?api_key=d8fd16e131618860a80cb75f720d694c").responseJSON { jsonResponse in
             do {
                 let decoded = try JSONDecoder().decode(DiscoverMoviesWrapper.self, from: jsonResponse.data!)
