@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5CE9F834DEF51ED989B031CD /* libPods-AlamofirePracticeOne.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2157695E75CC41F05CFD7E1F /* libPods-AlamofirePracticeOne.a */; };
 		848355152503E09C00AABC61 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848355142503E09C00AABC61 /* AppDelegate.swift */; };
 		848355172503E09C00AABC61 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848355162503E09C00AABC61 /* SceneDelegate.swift */; };
 		848355192503E09C00AABC61 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848355182503E09C00AABC61 /* ViewController.swift */; };
 		8483551C2503E09C00AABC61 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8483551A2503E09C00AABC61 /* Main.storyboard */; };
 		8483551E2503E09D00AABC61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8483551D2503E09D00AABC61 /* Assets.xcassets */; };
 		848355212503E09D00AABC61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8483551F2503E09D00AABC61 /* LaunchScreen.storyboard */; };
+		848355292503E30900AABC61 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 848355282503E30900AABC61 /* Podfile */; };
+		8483552B25044A4400AABC61 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8483552A25044A4400AABC61 /* Movie.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		07354AF6EBC3E2B1599D70B5 /* Pods-AlamofirePracticeOne.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlamofirePracticeOne.release.xcconfig"; path = "Target Support Files/Pods-AlamofirePracticeOne/Pods-AlamofirePracticeOne.release.xcconfig"; sourceTree = "<group>"; };
+		2157695E75CC41F05CFD7E1F /* libPods-AlamofirePracticeOne.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AlamofirePracticeOne.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		848355112503E09C00AABC61 /* AlamofirePracticeOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlamofirePracticeOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		848355142503E09C00AABC61 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		848355162503E09C00AABC61 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,9 @@
 		8483551D2503E09D00AABC61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		848355202503E09D00AABC61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		848355222503E09D00AABC61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		848355282503E30900AABC61 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		8483552A25044A4400AABC61 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		F0794525A59510F79D77C6D9 /* Pods-AlamofirePracticeOne.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlamofirePracticeOne.debug.xcconfig"; path = "Target Support Files/Pods-AlamofirePracticeOne/Pods-AlamofirePracticeOne.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +39,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CE9F834DEF51ED989B031CD /* libPods-AlamofirePracticeOne.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		03DCAA99C97618AAFB3E7D30 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2157695E75CC41F05CFD7E1F /* libPods-AlamofirePracticeOne.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		31E90A6B04311DD5CB7139D8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F0794525A59510F79D77C6D9 /* Pods-AlamofirePracticeOne.debug.xcconfig */,
+				07354AF6EBC3E2B1599D70B5 /* Pods-AlamofirePracticeOne.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		848355082503E09C00AABC61 = {
 			isa = PBXGroup;
 			children = (
+				848355282503E30900AABC61 /* Podfile */,
 				848355132503E09C00AABC61 /* AlamofirePracticeOne */,
 				848355122503E09C00AABC61 /* Products */,
+				31E90A6B04311DD5CB7139D8 /* Pods */,
+				03DCAA99C97618AAFB3E7D30 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,6 +92,7 @@
 				8483551D2503E09D00AABC61 /* Assets.xcassets */,
 				8483551F2503E09D00AABC61 /* LaunchScreen.storyboard */,
 				848355222503E09D00AABC61 /* Info.plist */,
+				8483552A25044A4400AABC61 /* Movie.swift */,
 			);
 			path = AlamofirePracticeOne;
 			sourceTree = "<group>";
@@ -74,6 +104,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 848355252503E09D00AABC61 /* Build configuration list for PBXNativeTarget "AlamofirePracticeOne" */;
 			buildPhases = (
+				236A832B1911E130AB60B9BF /* [CP] Check Pods Manifest.lock */,
 				8483550D2503E09C00AABC61 /* Sources */,
 				8483550E2503E09C00AABC61 /* Frameworks */,
 				8483550F2503E09C00AABC61 /* Resources */,
@@ -125,6 +156,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				848355292503E30900AABC61 /* Podfile in Resources */,
 				848355212503E09D00AABC61 /* LaunchScreen.storyboard in Resources */,
 				8483551E2503E09D00AABC61 /* Assets.xcassets in Resources */,
 				8483551C2503E09C00AABC61 /* Main.storyboard in Resources */,
@@ -133,6 +165,31 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		236A832B1911E130AB60B9BF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AlamofirePracticeOne-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8483550D2503E09C00AABC61 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -140,6 +197,7 @@
 			files = (
 				848355192503E09C00AABC61 /* ViewController.swift in Sources */,
 				848355152503E09C00AABC61 /* AppDelegate.swift in Sources */,
+				8483552B25044A4400AABC61 /* Movie.swift in Sources */,
 				848355172503E09C00AABC61 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,6 +340,7 @@
 		};
 		848355262503E09D00AABC61 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0794525A59510F79D77C6D9 /* Pods-AlamofirePracticeOne.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +359,7 @@
 		};
 		848355272503E09D00AABC61 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07354AF6EBC3E2B1599D70B5 /* Pods-AlamofirePracticeOne.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
