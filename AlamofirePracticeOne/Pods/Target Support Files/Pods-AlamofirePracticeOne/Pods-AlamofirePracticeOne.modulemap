@@ -1,0 +1,6 @@
+module Pods_AlamofirePracticeOne {
+  umbrella header "Pods-AlamofirePracticeOne-umbrella.h"
+
+  export *
+  module * { export * }
+}
